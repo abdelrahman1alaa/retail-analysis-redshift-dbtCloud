@@ -40,7 +40,7 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
   
   Used dbt's **Data Lineage** features to visualize the flow from raw source tables to final BI-ready models.
 
- # 📁 Repository Structure
+ # 📁 Repository Structure:
 
 ```
 ├── analyses/         # Analytical SQL queries
@@ -63,7 +63,7 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
 
 ---
 
-# 💡 Key Learnings
+# 💡 Key Learnings:
   **Cloud Cost Management:** Learning how to manage and optimize Redshift clusters efficiently.
   
   **Data Lineage:** Understanding the critical importance of tracking data flow for troubleshooting and transparency.
@@ -71,7 +71,7 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
   **Modular SQL:** Writing DRY (Don't Repeat Yourself) code using dbt.
 
 
- # 🛠️ Tools Used
+ # 🛠️ Tools Used:
    **Database:** Amazon Redshift
     
    **Transformation:** dbt Cloud
@@ -81,7 +81,7 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
    **Language:** SQL 
 
 
-   ## 🌟 About Me
+   ## 🌟 About Me:
 
 
 Hi there! I'm **AbdelRahman Alaa**,  **Data Engineer**. 
