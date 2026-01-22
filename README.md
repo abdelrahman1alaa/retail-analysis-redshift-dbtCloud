@@ -18,19 +18,21 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
 
  **1.Data Warehousing (Amazon Redshift)**
      Created the foundational infrastructure on AWS.
+     
      - **SQL Scripts:** Defined the schema for the retail domain.
      - **Entity-Relationship:** Developed Fact tables for transactions and Dimension tables for entities like Customers and Products.
 
  **2.Data Transformation (dbt Cloud)**
     I followed the best practices for dbt modeling by splitting the logic into distinct layers:
 
-    - **Staging Layer:** Focuses on cleaning, renaming, and casting types from raw data.
-    - **Marts Layer (Business Logic): * Customer Segmentation:** Analyzing customer behavior.
-    - **Monthly Sales Trends:** Calculating KPIs for business growth.
+    - Staging Layer: Focuses on cleaning, renaming, and casting types from raw data.
+    - Marts Layer (Business Logic): Customer Segmentation: Analyzing customer behavior.
+    - Monthly Sales Trends:** Calculating KPIs for business growth.
 
  **3.Version Control & Reliability**
-    - Connected dbt Cloud to **GitHub** to maintain a clean commit history.
-    - Used dbt's **Data Lineage** features to visualize the flow from raw source tables to final BI-ready models.
+ 
+    - Connected dbt Cloud to GitHub to maintain a clean commit history.
+    - Used dbt's Data Lineage features to visualize the flow from raw source tables to final BI-ready models.
 
  # 📁 Repository Structure:
 
@@ -65,11 +67,11 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
 
  # 🛠️ Tools Used:
    **Database:** Amazon Redshift
-    
+   
    **Transformation:** dbt Cloud
-    
+   
    **Version Control:** Git & GitHub
-    
+  
    **Language:** SQL 
 
 
