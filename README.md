@@ -4,41 +4,32 @@ This project demonstrates a full end-to-end Data Engineering workflow, from data
 #  Project Overview :
 In this project, I moved away from using ready-made datasets. Instead, I manually architected the schema and populated the data using SQL scripts to deeply understand how Cloud Data Warehouses handle complex queries and storage.
 
+
 # Key Features:
 
-  - **Custom Data Generation:** Designed and populated Dimension and Fact tables (Customers, Products, Sales).
-  
-  - **Cloud Data Warehousing:** Optimized environment setup in Amazon Redshift.
-  
-  - **Modular Transformations:** Leveraged dbt Cloud for building a multi-layered data architecture.
-  
+  - **Custom Data Generation:** Designed and populated Dimension and Fact tables (Customers, Products, Sales).  
+  - **Cloud Data Warehousing:** Optimized environment setup in Amazon Redshift.  
+  - **Modular Transformations:** Leveraged dbt Cloud for building a multi-layered data architecture.  
   - **CI/CD Integration:** Integrated dbt with GitHub for version control and code reliability.
-  
   - **Data Quality:** Implementation of testing and lineage tracking.
 
 
 # 🏗️ Architecture & Workflow :
 
- **1. Data Warehousing (Amazon Redshift)**
-   Created the foundational infrastructure on AWS.
-   **SQL Scripts:** Defined the schema for the retail domain.
-  
-  **Entity-Relationship:** Developed Fact tables for transactions and Dimension tables for entities like Customers and Products.
+ **1.Data Warehousing (Amazon Redshift)**
+     Created the foundational infrastructure on AWS.
+     - **SQL Scripts:** Defined the schema for the retail domain.
+     - **Entity-Relationship:** Developed Fact tables for transactions and Dimension tables for entities like Customers and Products.
 
- **2. Data Transformation (dbt Cloud)**
-   I followed the best practices for dbt modeling by splitting the logic into distinct layers:
-  
-  **Staging Layer:** Focuses on cleaning, renaming, and casting types from raw data.
-  
-  **Marts Layer (Business Logic): * Customer Segmentation:** Analyzing customer behavior.
-  
-  Monthly Sales Trends: Calculating KPIs for business growth.
+ **2.Data Transformation (dbt Cloud)**
+    I followed the best practices for dbt modeling by splitting the logic into distinct layers:
+    - **Staging Layer:** Focuses on cleaning, renaming, and casting types from raw data.
+    - **Marts Layer (Business Logic): * Customer Segmentation:** Analyzing customer behavior.
+    - **Monthly Sales Trends:** Calculating KPIs for business growth.
 
- **3. Version Control & Reliability**
-
-  Connected dbt Cloud to **GitHub** to maintain a clean commit history.
-  
-  Used dbt's **Data Lineage** features to visualize the flow from raw source tables to final BI-ready models.
+ **3.Version Control & Reliability**
+    - Connected dbt Cloud to **GitHub** to maintain a clean commit history.
+    - Used dbt's **Data Lineage** features to visualize the flow from raw source tables to final BI-ready models.
 
  # 📁 Repository Structure:
 
@@ -68,7 +59,7 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
   
   **Data Lineage:** Understanding the critical importance of tracking data flow for troubleshooting and transparency.
   
-  **Modular SQL:** Writing DRY (Don't Repeat Yourself) code using dbt.
+  **Modular SQL:** Writing code using dbt.
 
 
  # 🛠️ Tools Used:
