@@ -23,6 +23,7 @@ In this project, I moved away from using ready-made datasets. Instead, I manuall
 
  **2.Data Transformation (dbt Cloud)**
     I followed the best practices for dbt modeling by splitting the logic into distinct layers:
+
     - **Staging Layer:** Focuses on cleaning, renaming, and casting types from raw data.
     - **Marts Layer (Business Logic): * Customer Segmentation:** Analyzing customer behavior.
     - **Monthly Sales Trends:** Calculating KPIs for business growth.
